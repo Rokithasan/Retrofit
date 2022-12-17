@@ -1,11 +1,11 @@
 package rokit.com.retrofitconnection;
 
-import com.google.gson.Gson;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import retrofit2.converter.gson.GsonConverterFactory;
 import rokit.com.retrofitconnection.model.Api;
 
 import java.io.IOException;
@@ -36,11 +36,13 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl(Api.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create()).build();
+
     }
     
     
-    Retrofit retrofit = new Retrofit.Builder()
-    .baseUrl(Api.BASE_URL)
-    .addConverterFactory(GsonConverterFactory.create());
+
 
 }
