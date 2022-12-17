@@ -1,0 +1,8 @@
+rokit\com\retrofitconnection\App.class
+rokit\com\retrofitconnection\model\UserModel.class
+module-info.class
+rokit\com\retrofitconnection\model\Api.class
+rokit\com\retrofitconnection\SecondaryController.class
+.netbeans_automatic_build
+rokit\com\retrofitconnection\PrimaryController.class
+rokit\com\retrofitconnection\model\SupportUser.class
