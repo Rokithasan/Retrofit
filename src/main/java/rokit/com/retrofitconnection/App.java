@@ -41,7 +41,7 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        launch();
+        
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Api.BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create()).build();
@@ -69,6 +69,8 @@ public class App extends Application {
                 System.out.println("This status On Failure");
             }
         });
+        
+        launch();
 
     }
 

@@ -9,6 +9,15 @@ public class UserModel {
     String avater;
     SupportUser support;
 
+    public UserModel(int id, String email, String firstName, String lastName, String avater, SupportUser support) {
+        this.id = id;
+        this.email = email;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.avater = avater;
+        this.support = support;
+    }
+
     public int getId() {
         return id;
     }

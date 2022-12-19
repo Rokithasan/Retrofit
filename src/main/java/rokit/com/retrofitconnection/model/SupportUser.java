@@ -5,6 +5,11 @@ public class SupportUser {
     String url;
     String text;
 
+    public SupportUser(String url, String text) {
+        this.url = url;
+        this.text = text;
+    }
+
     public String getUrl() {
         return url;
     }
